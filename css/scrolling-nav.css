@@ -10,3 +10,8 @@ header {
 section {
   padding: 150px 0;
 }
+
+.link {
+  color: black;
+  text-decoration: underline;
+}
