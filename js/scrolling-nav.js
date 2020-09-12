@@ -27,3 +27,16 @@
   });
 
 })(jQuery); // End of use strict
+
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  //Get the button:
+  mybutton = document.getElementById("goTop");
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
