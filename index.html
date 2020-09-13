@@ -29,23 +29,26 @@
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="nav-link js-scroll-trigger text-white lead mr-auto" href="#home" id="goTop">Rohan Jagtap</a>
+      <a class="nav-link js-scroll-trigger text-white mr-auto" href="#home" id="goTop"><strong>Rohan Jagtap</strong></a>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger lead" href="#about">About</a>
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger lead" href="#papers">Papers</a>
+            <a class="nav-link js-scroll-trigger" href="#papers">Papers</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger lead" href="#hackathons">Hackathons</a>
+            <a class="nav-link js-scroll-trigger" href="#hackathons">Hackathons</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger lead" href="#blogs">Blog</a>
+            <a class="nav-link js-scroll-trigger" href="#blogs">Blog</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger lead" href="#contact">Contact</a>
+            <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -56,12 +59,10 @@
     <div class="container text-center">
       <h1 class="text-white"><strong>Rohan Jagtap</strong></h1>
       <p class="lead text-light">Member of Technical Staff at VMware. Looking for an opportunity in AI Research.</p>
-      <div class="pt-5">
-        <a class="btn btn-light" href="static/resume.pdf" target="_blank"><i class="fa fa-lg fa-file fa-fw"></i><big class="mx-2">Resume</big></a>
-        <a class="btn btn-light" href="https://www.linkedin.com/in/rojagtap/" target="_blank"><i class="fab fa-lg fa-linkedin fa-fw"></i><big class="mx-2">LinkedIn</big></a>
-        <a class="btn btn-light" href="https://github.com/rojagtap" target="_blank"><i class="fab fa-lg fa-github fa-fw"></i><big class="mx-2">Github</big></a>
-        <a class="btn btn-light" href="https://medium.com/@rojagtap" target="_blank"><i class="fab fa-lg fa-medium fa-fw"></i><big class="mx-2">Medium</big></a>
-      </div>
+      <a class="col-12 col-lg-2 mt-2 btn btn-light" href="static/resume.pdf" target="_blank"><i class="fa fa-lg fa-file fa-fw"></i><big class="mx-2">Resume</big></a>
+      <a class="col-12 col-lg-2 mt-2 btn btn-light" href="https://www.linkedin.com/in/rojagtap/" target="_blank"><i class="fab fa-lg fa-linkedin fa-fw"></i><big class="mx-2">LinkedIn</big></a>
+      <a class="col-12 col-lg-2 mt-2 btn btn-light" href="https://github.com/rojagtap" target="_blank"><i class="fab fa-lg fa-github fa-fw"></i><big class="mx-2">Github</big></a>
+      <a class="col-12 col-lg-2 mt-2 btn btn-light" href="https://medium.com/@rojagtap" target="_blank"><i class="fab fa-lg fa-medium fa-fw"></i><big class="mx-2">Medium</big></a>
     </div>
   </header>
 
@@ -86,7 +87,7 @@
             I blog about Machine Learning, Deep Learning, Reinforcement Learning, Natural Language Processing at <a class="link" target="_blank" href="https://medium.com/@rojagtap">Medium</a>.
           </p>
           <p class="lead">
-            Have a look at my <a class="link" target="_blank" href="https://medium.com/@rojagtap">resume</a> for more information.
+            Have a look at my <a class="link" target="_blank" href="static/resume.pdf">resume</a> for more information.
           </p>
         </div>
       </div>
@@ -95,13 +96,13 @@
 
   <section id="papers" class="bg-light">
     <div class="container">
+      <div class="row px-5">
+        <h1><strong>Publications</strong></h1>
+      </div>
+      <div class="row px-5 py-4">
+        <h5><a class="link" target="_blank" href="https://scholar.google.com/citations?user=y-YAk8AAAAAJ">My Google Scholar Profile</a></h5>
+      </div>
       <div class="row">
-        <div class="col-12 px-5">
-          <h1><strong>Publications</strong></h1>
-        </div>
-        <div class="col-12 px-5 py-4">
-          <h5><a class="link" target="_blank" href="https://scholar.google.com/citations?user=y-YAk8AAAAAJ">My Google Scholar Profile</a></h5>
-        </div>
         <div class="col-lg-11 col-sm-12 px-5 mx-auto">
           <h2 class="py-2"><strong>2020</strong></h2>
           <div class="list-group">
@@ -118,6 +119,7 @@
       <div class="row px-5 pb-4">
         <h1><strong>Hackathons</strong></h1>
       </div>
+
       <div class="list-group-item py-5">
         <div class="row">
           <div class="col-lg-4 col-sm-12 px-4 py-5">
@@ -151,7 +153,7 @@
               The task was to derive Air Quality Index (AQI) and valuable insights from the given data and to predict AQI in Temporal as well as Spatial dimensions with supporting high-quality visualizations.
             </p>
             <p class="lead">
-              We proposed training two separate autoregressive models (<a class="link" target="_blank" href="https://papers.nips.cc/paper/5955-convolutional-lstm-network-a-machine-learning-approach-for-precipitation-nowcasting.pdf">ConvLSTM</a>) for temporal and spatial predictions respectively. I took care of pre-processing and training the models whereas my partner, Siddhesh Jadhav worked on the tableau software for the visualizations.
+              We proposed training two separate autoregressive models (<a class="link" target="_blank" href="https://papers.nips.cc/paper/5955-convolutional-lstm-network-a-machine-learning-approach-for-precipitation-nowcasting.pdf">ConvLSTM</a>-based) for temporal and spatial predictions respectively. I took care of pre-processing and training the models whereas my partner, Siddhesh Jadhav worked on the tableau software for the visualizations.
             </p>
             <p class="lead">
               Check out the code and visualizations <a class="link" target="_blank" href="https://github.com/rojagtap/sangam2019">here</a>.
@@ -164,112 +166,190 @@
 
   <section id="blogs" class="bg-light">
     <div class="container">
-      <div class="row">
-        <div class="col-12 px-5 pb-4">
-          <h1><strong>Top Articles</strong></h1>
-        </div>
+      <div class="row px-5 pb-4">
+        <h1><strong>Top Articles</strong></h1>
       </div>
+
       <div class="row">
         <div class="card col-12">
-          <a class="card-link" target="_blank" href="https://towardsdatascience.com/t5-text-to-text-transfer-transformer-643f89e8905e">
-            <div class="card-body">
-              <div class="row">
-                <div class="col-lg-7 col-sm-12 p-5">
-                  <img class="image-responsive" src="https://miro.medium.com/max/600/0*gzDajSOL6UfOVFpW.gif" width="100%">
-                </div>
-                <div class="col-lg-5 col-sm-12 p-5">
-                  <h2><strong>T5: Text-To-Text Transfer Transformer</strong></h2>
-                  <p class="lead">Understanding Transformer-Based Self-Supervised Architectures</p>
-                  <p class="text-dark">In this article, we’ll discuss Google’s state of the art, T5 — Text-to-Text Transfer Transformer Model which was proposed earlier this year in the paper, “Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer”.</p>
-                </div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-lg-7 col-sm-12 p-5">
+                <img class="image-responsive" src="https://miro.medium.com/max/600/0*gzDajSOL6UfOVFpW.gif" width="100%">
               </div>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="row">
-        <div class="card col-12 col-lg-6">
-          <a class="card-link" target="_blank" href="https://towardsdatascience.com/reformer-the-efficient-transformer-dd9830164703">
-            <div class="card-body">
-              <div class="col-12">
-                <img class="image-responsive" src="https://miro.medium.com/max/700/0*NHY1lq6MNIjDWw9o" width="100%">
-              </div>
-              <div class="col-12 pt-4">
-                <h3><strong>Reformer: The Efficient Transformer</strong></h3>
+              <div class="col-lg-5 col-sm-12 p-5">
+                <h2><strong>T5: Text-To-Text Transfer Transformer</strong></h2>
                 <p class="lead">Understanding Transformer-Based Self-Supervised Architectures</p>
+                <p class="text-dark">In this article, we’ll discuss Google’s state of the art, T5 — Text-to-Text Transfer Transformer Model which was proposed earlier this year in the paper, “Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer”.</p>
               </div>
             </div>
-          </a>
-        </div>
-
-        <div class="card col-12 col-lg-6">
-          <a class="card-link" target="_blank" href="https://medium.com/swlh/abstractive-text-summarization-using-transformers-3e774cc42453">
-            <div class="card-body">
-              <div class="col-12">
-                <img class="image-responsive" src="https://miro.medium.com/max/1000/0*qsANOZH3XlFoZfGa" width="100%">
-              </div>
-              <div class="col-12 pt-4">
-                <h3><strong>Abstractive Text Summarization Using Transformers</strong></h3>
-                <p class="lead">An exhaustive explanation of Google’s Transformer model; from theory to implementation</p>
-                <p class="text-dark">This article is a step-by-step guide for building an Abstractive Text Summarizer for generating news article headlines using the Transformer model with TensorFlow.</p>
-              </div>
-            </div>
-          </a>
+            <a class="stretched-link" target="_blank" href="https://towardsdatascience.com/t5-text-to-text-transfer-transformer-643f89e8905e"></a>
+          </div>
         </div>
       </div>
 
       <div class="row">
         <div class="card col-12 col-lg-6">
-          <a class="card-link" target="_blank" href="https://towardsdatascience.com/transformers-explained-65454c0f3fa7">
-            <div class="card-body">
-              <div class="col-12">
-                <img class="image-responsive" src="https://miro.medium.com/max/700/0*zrrUdDqkhP6VSlNq" width="100%">
-              </div>
-              <div class="col-12 pt-4">
-                <h3><strong>Transformers Explained</strong></h3>
-                <p class="lead">An exhaustive explanation of Google’s Transformer model; from theory to implementation</p>
-              </div>
+          <div class="card-body">
+            <div class="col-12">
+              <img class="image-responsive" src="https://miro.medium.com/max/700/0*NHY1lq6MNIjDWw9o" width="100%">
             </div>
-          </a>
+            <div class="col-12 pt-4">
+              <h3><strong>Reformer: The Efficient Transformer</strong></h3>
+              <p class="lead">Understanding Transformer-Based Self-Supervised Architectures</p>
+            </div>
+            <a class="stretched-link" target="_blank" href="https://towardsdatascience.com/reformer-the-efficient-transformer-dd9830164703"></a>
+          </div>
         </div>
 
         <div class="card col-12 col-lg-6">
-          <a class="card-link" target="_blank" href="https://medium.com/swlh/transcoder-facebooks-unsupervised-programming-language-translator-10b82d1c7a9e">
-            <div class="card-body">
-              <div class="col-12">
-                <img class="image-responsive" src="https://miro.medium.com/max/1000/0*HsC046rW5fZ8vrJu" width="100%">
-              </div>
-              <div class="col-12 pt-4">
-                <h3><strong>TransCoder: Facebook’s Unsupervised Programming Language Translator</strong></h3>
-                <p class="lead">How Facebook Built a Transcompiler using Deep Learning</p>
-                <p class="text-dark">The model is trained to encode the source to the latent space and then generate the target from this latent vector. For this, TransCoder implements the 3 principles of Unsupervised Machine Translation for pretraining.</p>
-              </div>
+          <div class="card-body">
+            <div class="col-12">
+              <img class="image-responsive" src="https://miro.medium.com/max/1000/0*qsANOZH3XlFoZfGa" width="100%">
             </div>
-          </a>
+            <div class="col-12 pt-4">
+              <h3><strong>Abstractive Text Summarization Using Transformers</strong></h3>
+              <p class="lead">An exhaustive explanation of Google’s Transformer model; from theory to implementation</p>
+              <p class="text-dark">This article is a step-by-step guide for building an Abstractive Text Summarizer for generating news article headlines using the Transformer model with TensorFlow.</p>
+            </div>
+            <a class="stretched-link" target="_blank" href="https://medium.com/swlh/abstractive-text-summarization-using-transformers-3e774cc42453"></a>
+          </div>
         </div>
       </div>
 
+      <div class="row">
+        <div class="card col-12 col-lg-6">
+          <div class="card-body">
+            <div class="col-12">
+              <img class="image-responsive" src="https://miro.medium.com/max/700/0*zrrUdDqkhP6VSlNq" width="100%">
+            </div>
+            <div class="col-12 pt-4">
+              <h3><strong>Transformers Explained</strong></h3>
+              <p class="lead">An exhaustive explanation of Google’s Transformer model; from theory to implementation</p>
+            </div>
+            <a class="stretched-link" target="_blank" href="https://towardsdatascience.com/transformers-explained-65454c0f3fa7"></a>
+          </div>
+        </div>
+
+        <div class="card col-12 col-lg-6">
+          <div class="card-body">
+            <div class="col-12">
+              <img class="image-responsive" src="https://miro.medium.com/max/1000/0*HsC046rW5fZ8vrJu" width="100%">
+            </div>
+            <div class="col-12 pt-4">
+              <h3><strong>TransCoder: Facebook’s Unsupervised Programming Language Translator</strong></h3>
+              <p class="lead">How Facebook Built a Transcompiler using Deep Learning</p>
+              <p class="text-dark">The model is trained to encode the source to the latent space and then generate the target from this latent vector. For this, TransCoder implements the 3 principles of Unsupervised Machine Translation for pretraining.</p>
+            </div>
+            <a class="stretched-link" target="_blank" href="https://medium.com/swlh/transcoder-facebooks-unsupervised-programming-language-translator-10b82d1c7a9e"></a>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section id="contact">
+  <section id="projects">
     <div class="container">
+      <div class="row px-5 pb-4">
+        <h1><strong>Projects</strong></h1>
+      </div>
+
       <div class="row">
-        <div class="col-12 px-5">
-          <h2>Contact</h2>
+        <div class="card col-12">
+          <div class="card-body">
+            <div class="col-12">
+              <img class="image-responsive" src="https://miro.medium.com/max/700/0*Rkob3QkftjYGttaB.png" width="100%">
+            </div>
+            <div class="col-12 pt-4">
+              <h3><strong>Abstractive Text Summarization using TensorFlow</strong></h3>
+              <p class="lead">Implementation of Transformer (Vaswani et. al.)</p>
+            </div>
+            <a class="stretched-link" target="_blank" href="https://github.com/rojagtap/abstractive_summarizer"></a>
+          </div>
         </div>
-        <div class="col-12 px-5">
-          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
+      </div>
+      <div class="row">
+        <div class="card col-12 col-lg-4">
+          <div class="card-body">
+            <div class="col-12">
+              <img class="image-responsive" src="https://miro.medium.com/max/460/1*fN-q2XG9CTii8S6Xh8SIyg.gif" width="100%">
+            </div>
+            <div class="col-12 pt-4">
+              <h3><strong>MNIST Digit Generation with GANs</strong></h3>
+              <p class="lead">Implementation of DCGAN: Deep Convolutional Generative Adversarial Networks (Radford et. al.)</p>
+            </div>
+            <a class="stretched-link" target="_blank" href="https://github.com/rojagtap/DCGAN"></a>
+          </div>
         </div>
+
+        <div class="card col-12 col-lg-8">
+          <div class="card-body">
+            <div class="col-12">
+              <img class="image-responsive" src="static/pix2pix.png" width="100%">
+            </div>
+            <div class="col-12 pt-4">
+              <h3><strong>Constructing Images from Wireframes with pix2pix</strong></h3>
+              <p class="lead">Implementation of pix2pix (Isola et. al.)</p>
+              <p class="text-dark">The pix2pix generator is based on the U-Net architecture. To prevent loss of information from the generator bottleneck, U-Net proposes corresponding skip connections from encoder to decoder.</p>
+              <p class="text-dark">The authors have proposed an enhanced classifier for the discriminator. It essentially classifies patches of the original image as real or fake to capture high-frequency structures. It is called Markovian Discriminator or PatchGAN.</p>
+            </div>
+            <a class="stretched-link" target="_blank" href="https://github.com/rojagtap/pix2pix"></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="card col-12 col-lg-7">
+          <div class="card-body">
+            <div class="col-12">
+              <img class="image-responsive" src="static/ar0.png" width="100%">
+            </div>
+            <div class="col-12 pt-4">
+              <h3><strong>Autoregressive Language Model-I: Book Text Generation</strong></h3>
+              <p class="lead">Implementing a RNN-based Language Model from Scratch using Numpy</p>
+            </div>
+            <a class="stretched-link" target="_blank" href="https://github.com/rojagtap/rnn-lm"></a>
+          </div>
+        </div>
+
+        <div class="card col-12 col-lg-5">
+          <div class="card-body">
+            <div class="col-12">
+              <img class="image-responsive" src="static/ar1.png" width="100%">
+            </div>
+            <div class="col-12 pt-4">
+              <h3><strong>Autoregressive Language Model-II: Eminem Lyrics Generation</strong></h3>
+              <p class="lead">Implementating a LSTM-based Language Model using Keras</p>
+            </div>
+            <a class="stretched-link" target="_blank" href="https://github.com/rojagtap/eminem_lyrics_generator"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="bg-light">
+    <div class="container">
+      <div class="row px-5">
+          <h1><strong>Contact</strong></h1>
+      </div>
+      <div class="col-12 px-5 py-4">
+        <h5 class="lead">You can get in touch with me at: <a class="link" target="_blank" href="mailto:rohanj30@icloud.com">rohanj30@icloud.com</a></h5>
       </div>
     </div>
   </section>
   
 
   <!-- Footer -->
-  <footer class="py-5 bg-dark">
+  <footer class="p-5 bg-dark">
     <div class="container">
-      <p class="m-0 text-center text-white">&copy; Rohan Jagtap 2020</p>
+      <div class="row">
+        <p class="my-0 mr-auto text-white"><a class="text-white" href="#">Rohan Jagtap</a> &copy; 2020</p>
+        <div class="ml-auto">
+          <a class="my-0 text-white" target="_blank" href="https://www.linkedin.com/in/rojagtap/"><i class="fab fa-lg fa-linkedin fa-fw"></i></a>
+          <a class="my-0 text-white" target="_blank" href="https://twitter.com/rojagtap"><i class="fab fa-lg fa-twitter fa-fw"></i></a>
+        </div>
+      </div>
     </div>
     <!-- /.container -->
   </footer>

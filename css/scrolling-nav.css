@@ -20,12 +20,11 @@ section {
   display: none;
 }
 
-.card-link {
-  color: black;
-  text-decoration: none;
+.card {
+  transition: transform .2s;
 }
 
-.card-link:hover {
-  color: black;
-  text-decoration: none;
+.card:hover {
+  transform: scale(1.02);
+  z-index: 1;
 }
