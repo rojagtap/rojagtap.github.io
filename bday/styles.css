@@ -1,0 +1,306 @@
+/* CSS VARIABLES */
+:root {
+    --primary: #141414 !important;
+    --light: #F3F3F3 !important;
+    --dark: 	#686868 !important;
+  }
+  
+  html, body {
+    width: 100vw !important;
+    min-height: 100vh !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background-color: var(--primary) !important;
+    color: var(--light) !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    box-sizing: border-box !important;
+    line-height: 1.4 !important;
+  }
+  
+  img {
+    max-width: 100% !important;
+  }
+  
+  .wrapper {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  /* HEADER */
+  header {
+    padding: 20px 20px 0 20px !important;
+    position: fixed !important;
+    top: 0 !important;
+    display: grid !important;  
+    grid-gap:5px !important;
+    grid-template-columns: 1fr 4fr 1fr !important;
+    grid-template-areas: 
+     "nt mn mn sb . . . " !important; 
+    background-color: var(--primary) !important;
+    width: 100% !important;
+    margin-bottom: 0px !important;
+    background-color: rgba(0, 0, 0, 0) !important;
+  }
+  
+  .netflixLogo {
+    grid-area: nt !important;
+    object-fit: cover !important;
+    width: 100% !important;
+    max-height: 100% !important;
+    
+    padding-left: 30px !important;
+    padding-top: 0px !important;
+  }
+  
+  .netflixLogo img {  
+    height: 30px !important;
+  }
+  
+  #logo {
+    color: #E50914 !important;  
+    margin: 0 !important; 
+    padding: 0 !important; 
+  }
+  
+  .main-nav {
+    grid-area: mn !important;
+  }
+  
+  .main-nav a {
+    color: var(--light) !important;
+    text-decoration: none !important;
+    margin: 5px !important;  
+  }
+  
+  .main-nav a:hover {
+    color: var(--dark) !important;
+  }
+  
+  .sub-nav {
+    grid-area: sb !important;
+    padding: 0 40px 0 40px !important;
+  }
+  
+  .sub-nav a {
+    color: var(--light) !important;
+    text-decoration: none !important;
+    margin: 5px !important;
+  }
+  
+  .sub-nav a:hover {
+    color: var(--dark) !important;
+  }
+  
+  
+  /* MAIN CONTIANER */
+  .main-container {
+    padding: 50px !important;
+  }
+  
+  .box {
+    display: grid !important;
+    grid-gap: 20px !important;
+    grid-template-columns: auto auto auto auto auto !important;
+  }
+  
+  .box a {
+    transition: transform .3s !important;  
+  }
+  
+  .box a:hover {
+    transition: transform .3s !important;
+    -ms-transform: scale(1.4) !important;
+    -webkit-transform: scale(1.4) !important;  
+    transform: scale(1.4) !important;
+  }
+  
+  .box img {
+    border-radius: 2px !important;
+  }
+  
+  /* LINKS */
+  .link {
+    padding: 50px !important;
+  }
+  
+  .sub-links ul {
+    list-style: none !important;
+    padding: 0 !important;
+    display: grid !important;
+    grid-gap: 1rem !important;
+    grid-template-columns: repeat(4, 1fr) !important;
+  }
+  
+  .sub-links a {
+    color: var(--dark) !important;
+    text-decoration: none !important;
+  }
+  
+  .sub-links a:hover {
+    color: var(--dark) !important;
+    text-decoration: underline !important;
+  }
+  
+  .logos a{
+    padding-right: 1rem !important;
+  }
+  
+  .logo {
+    color: var(--dark) !important;
+  }
+  
+  /* FOOTER */
+  footer {
+    padding: 1rem !important;
+    text-align: left !important;
+    color: var(--dark) !important;
+    margin: 10px !important;
+  }
+  
+  /* MEDIA QUERIES */
+  
+  @media(max-width: 900px) {
+  
+    header {
+      display: grid !important;
+      grid-gap: 20px !important;
+      grid-template-columns: repeat(2, 1fr) !important;
+      grid-template-areas: 
+      "nt nt nt  .  .  . sb . . . "
+      "mn mn mn mn mn mn  mn mn mn mn" !important;
+    }
+  
+    .box {
+      display: grid !important;
+      grid-gap: 20px !important;
+      grid-template-columns: repeat(4, minmax(100px, 1fr)) !important;
+    }
+  
+  }
+  
+  @media(max-width: 700px) {
+  
+    header {
+      display: grid !important;
+      grid-gap: 20px !important;
+      grid-template-columns: repeat(2, 1fr) !important;
+      grid-template-areas: 
+      "nt nt nt  .  .  . sb . . . "
+      "mn mn mn mn mn mn  mn mn mn mn" !important;
+    }
+  
+    .box {
+      display: grid !important;
+      grid-gap: 20px !important;
+      grid-template-columns: repeat(3, minmax(100px, 1fr)) !important;
+    }
+  
+    .sub-links ul {
+      display: grid !important;
+      grid-gap: 20px !important;
+      grid-template-columns: repeat(3, 1fr) !important;
+    }
+     
+  }
+  
+  @media(max-width: 500px) {
+  
+    .wrapper {
+      font-size: 15px !important;
+    }
+  
+    header {
+      margin: 0 !important;
+      padding: 20px 0 0 0 !important;
+      position: static !important;
+      display: grid !important;
+      grid-gap: 20px !important;
+      grid-template-columns: repeat(1, 1fr) !important;
+      grid-template-areas: 
+      "nt"    
+      "mn"
+      "sb" !important;
+      text-align: center !important;
+    }
+  
+    .netflixLogo {
+      max-width: 100% !important;
+      margin: auto !important;
+      padding-right: 20px !important;
+    }
+  
+    .main-nav {
+      display: grid !important;
+      grid-gap: 0px !important;
+      grid-template-columns: repeat(1, 1fr) !important;
+      text-align: center !important;
+    }
+  
+    h1 {
+      text-align: center !important;
+      font-size: 18px !important;
+    }
+  
+    .box {
+      display: grid !important;
+      grid-gap: 20px !important;
+      grid-template-columns: repeat(1, 1fr) !important;
+      text-align: center !important;    
+    }
+  
+    .box a:hover {
+      transition: transform .3s !important;
+      -ms-transform: scale(1) !important;
+      -webkit-transform: scale(1) !important;  
+      transform: scale(1.2) !important;
+    }
+  
+    .logos {
+      display: grid !important;
+      grid-gap: 20px !important;
+      grid-template-columns: repeat(2, 1fr) !important;
+      text-align: center !important;
+    }
+  
+    .sub-links ul {
+      display: grid !important;
+      grid-gap: 20px !important;
+      grid-template-columns: repeat(1, 1fr) !important;
+      text-align: center !important;
+      font-size: 15px !important;
+    }
+     
+  }
+
+a:focus {
+  outline: none;
+}
+
+.top-grad {
+  mask-image: linear-gradient(to bottom, rgba(20,20,20,0), rgba(0,0,0,1), rgba(0,0,0,1), rgba(0,0,0,1), rgba(0,0,0,1), rgba(0,0,0,1), rgba(0,0,0,1), rgba(0,0,0,1));
+}
+
+.wallpaper {
+  width: 100%;
+  mask-image: linear-gradient(to right, rgba(20,20,20,0), rgba(0,0,0,1), rgba(0,0,0,1), rgba(0,0,0,1), rgba(0,0,0,1), rgba(0,0,0,1));
+}
+
+.image {
+  mask-image: linear-gradient(to top, rgba(20,20,20,0), rgba(0,0,0,1), rgba(0,0,0,1), rgba(0,0,0,1));
+}
+
+.match {
+  color: #46d369;
+}
+
+.dark {
+  color: #777;
+}
+
+.bonus {
+  font-family: "Gill Sans";
+  text-align: center;
+  color: white;
+  font-size: 70px;
+  text-shadow: 3px 3px #FF0000;
+}
